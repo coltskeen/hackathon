@@ -9,8 +9,9 @@ document.body.appendChild( renderer.domElement );
 
 camera.position.z = 8;
 
-const geometry = new THREE.CylinderGeometry( 5, 5, .8, 64 );
-const material = new THREE.MeshBasicMaterial( { color: 0xffcc99 } );
+const geometry = new THREE.CylinderGeometry( 5, 5, .5, 64 );
+const loader = new THREE.TextureLoader();
+const material = new THREE.MeshBasicMaterial( { map: loader.load('harambe-image.png') } );
 const coin = new THREE.Mesh( geometry, material );
 scene.add( coin );
 

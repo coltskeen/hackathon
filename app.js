@@ -1,4 +1,3 @@
-console.log("loaded!");
 
 //define the scene
 const scene = new THREE.Scene();

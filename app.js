@@ -18,7 +18,7 @@ document.body.appendChild( renderer.domElement );
 camera.position.z = 8;
 
 //create coin geometry shape
-const geometry = new THREE.CylinderGeometry( 5, 5, .5, 64 );
+const geometry = new THREE.CylinderGeometry( 5, 5, .3, 64 );
 
 //add texture to the coin --> image of bitcoin
 const textureLoader = new THREE.TextureLoader();

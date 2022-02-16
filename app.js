@@ -22,11 +22,11 @@ const geometry = new THREE.CylinderGeometry( 5, 5, .3, 64 );
 
 //add texture to the coin --> image of bitcoin
 const textureLoader = new THREE.TextureLoader();
-const texture1 = textureLoader.load('Bitcoin-image.png');
+const texture = textureLoader.load('Bitcoin-image.png');
 const material = [ 
     new THREE.MeshBasicMaterial( {color: 0xa27d0c} ),
-    new THREE.MeshBasicMaterial( { map: texture1 } ),
-    new THREE.MeshBasicMaterial( { map: texture1 } )
+    new THREE.MeshBasicMaterial( { map: texture } ),
+    new THREE.MeshBasicMaterial( { map: texture } )
 ];
 const coin = new THREE.Mesh( geometry, material );
 
